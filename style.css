@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,3 +7,70 @@
   list-style: none;
   text-decoration: none;
 }
+
+body {
+  font-family: var(--font-poppins);
+}
+
+/* variables */
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --bg-primary: #e02c6d;
+  --color-primary: #3a3a3a;
+  --color-secondary: #787885;
+  --color-sub-secondary: #6c6c6c;
+  --dark-gray: #18191f;
+}
+/* shared styles */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.section-description {
+  color: var(--color-sub-secondary);
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+}
+.primary-button {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--bg-primary);
+  padding: 10px 24px;
+  border-radius: 2.5rem;
+  border: 1px solid transparent;
+}
+.primary-button:hover {
+  color: var(--bg-primary);
+  border: 1px solid var(--bg-primary);
+}
+/* nav & hero section */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+.brand-logo {
+  color: var(--color-primary);
+  font-family: var(--font-poppins);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links .link-item {
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.fa-solid {
+  font-size: 1.5rem;
+}
+/* hero */
