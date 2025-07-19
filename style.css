@@ -298,10 +298,10 @@ footer {
     background-image: url(./images/circle-bg2.png);
     text-align: center;
     background-position: center;
-    background-size: 80%;
+    background-size: 100%;
   }
   .hero-img img {
-    width: 50%;
+    width: 70%;
     position: relative;
     right: 0;
   }
