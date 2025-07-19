@@ -145,7 +145,76 @@ body {
 .sponsor-item img {
   width: 100%;
 }
+/* products */
+.product-content {
+  margin-top: 120px;
+}
+.product-heading {
+  color: var(--dark-gray);
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+.product-item img {
+  width: 100%;
+}
+.product-items {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+/* product item styling */
+.product-item {
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 8px;
+}
+.product-title {
+  color: var(--dark-gray);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+.product-price {
+  color: var(--dark-gray);
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+.product-rating .rating-icons .fa-solid {
+  font-size: 12px;
+  color: var(--bg-primary);
+}
+.rating-text {
+  color: var(--color-secondary);
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
 
+.product-description-detail {
+  display: block;
+  color: var(--color-sub-secondary);
+  font-size: 14px;
+  font-weight: 600;
+}
+.bottom-ellipse {
+  margin-top: 2rem;
+  margin-right: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5rem;
+  color: #e02c6d;
+  font-size: 1rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   .nav-content {
@@ -188,5 +257,32 @@ body {
     grid-template-columns: repeat(4, 50px);
     gap: 20px;
     justify-content: space-between;
+  }
+  /* products */
+  .product-items {
+    grid-template-columns: 1fr;
+  }
+  .product-item {
+    display: none;
+  }
+  .product-1,
+  .product-2,
+  .product-3 {
+    display: block;
+  }
+  .product-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .product-content {
+    margin-top: 4rem;
+  }
+  .product-items {
+    margin-top: 2.5rem;
+  }
+  .bottom-ellipse {
+    font-size: 14px;
+    margin-right: 0;
+    margin-top: 1rem;
   }
 }
