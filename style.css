@@ -215,6 +215,31 @@ body {
   text-overflow: ellipsis;
   cursor: pointer;
 }
+/* featured product */
+.featured-product {
+  margin-top: 8rem;
+}
+.featured-product-content {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+.featured-product-content img {
+  width: 100%;
+}
+.featured-product-detail .product-heading {
+  font-size: 36px;
+  text-align: left;
+}
+.featured-product-detail .section-description {
+  margin-top: 1.5rem;
+  width: 90%;
+}
+.featured-product-detail > .primary-button{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   .nav-content {
