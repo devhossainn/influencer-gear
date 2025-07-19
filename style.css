@@ -112,11 +112,12 @@ body {
   background-image: url(./images/circle-bg1.png);
   background-position: right center;
   background-repeat: no-repeat;
+  background-size: contain;
   object-fit: cover;
   padding-top: 6rem;
 }
 .hero-img img {
-  max-width: 80%;
+  /* max-width: 80%; */
   position: relative;
   top: -50px;
   right: 50px;
@@ -297,9 +298,10 @@ footer {
     background-image: url(./images/circle-bg2.png);
     text-align: center;
     background-position: center;
-    background-size: cover;
+    background-size: 80%;
   }
   .hero-img img {
+    width: 50%;
     position: relative;
     right: 0;
   }
@@ -363,7 +365,7 @@ footer {
     width: 100%;
   }
   /* footer */
-  .footer-heading{
+  .footer-heading {
     font-size: 24px;
   }
 }
