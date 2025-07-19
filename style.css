@@ -240,6 +240,45 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+/* footer */
+footer {
+  margin-top: 6rem;
+  padding: 50px;
+  background-color: #0a0826;
+}
+.footer-content {
+  color: #fff;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-heading {
+  font-size: 32px;
+  font-weight: bold;
+}
+.footer-content p {
+  margin-top: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.footer-icons .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  background: #22213c;
+  border-radius: 50%;
+}
+
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   .nav-content {
@@ -322,5 +361,9 @@ body {
   .featured-product-detail .section-description {
     margin-top: 0.5rem;
     width: 100%;
+  }
+  /* footer */
+  .footer-heading{
+    font-size: 24px;
   }
 }
